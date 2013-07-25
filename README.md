@@ -65,4 +65,4 @@ The database will contain only one table. The table name is REQUESTS:
 Bugs && questions
 -----------------
 
-Please e-mail me at demanuel<at>ymail.com
+Please e-mail me at demanuel@ymail.com
