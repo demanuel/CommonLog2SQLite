@@ -22,14 +22,14 @@ How to run
 
 
 The easiest way is just to:
-> perl commonLogToSQLite.pl <log_file>
+> perl commonLogToSQLite.pl LOG_FILE
 
 This will create a common_log.db file. This file is a sqlite file containing all the requests
-from the <log_file> parsed and inserted. 
+from the LOG_FILE parsed and inserted. 
 
 
 The more complexed way:
-> perl commonLogToSQLite.pl --batch 100000 --db my_sqlite.db <log_file>
+> perl commonLogToSQLite.pl --batch 100000 --db my_sqlite.db LOG_FILE
 
 This does the same as the previous example, but it will create a database named my_sqlite.db and
 it will perform the insertions on the database using batches of 100000 requests.
