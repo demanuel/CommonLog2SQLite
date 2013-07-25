@@ -47,19 +47,22 @@ Internals
 
 The database will contain only one table. The table name is REQUESTS:
 
-| Column            | Type    | Constraints | Description                                                                     |
-|-------------------+---------+-------------+---------------------------------------------------------------------------------|
-| ORIGIN_IP         | TEXT    | NOT NULL    | The IP of the requester                                                         |
-| USER_CLIENT       | TEXT    |             | The user identifier                                                             |
-| USER              | TEXT    |             | The user id                                                                     |
-| TIMESTAMP         | INTEGER | NOT NULL    | The timestamp in unix epoch                                                     |
-| REQUEST_METHOD    | TEXT    | NOT NULL    | The request method (GET,POST,PUT...)                                            |
-| RESOURCE          | TEXT    | NOT NULL    | The resource of the request                                                     |
-| PROTOCOL          | TEXT    |             | The protocol (basically it's always HTTP)                                       |
-| PROTOCOL_VERSION  | REAL    |             | The version of the protocol (for HTTP protocol, it should be 1.0 or 1.1)        |
-| STATUS            | INTEGER | NOT NULL    | The status code of the response (for HTTP protocol it should be 200,404,401...) |
-| BYTES_TRANSFERRED | INTEGER |             | The size (in bytes) of the response                                             |
-|-------------------+---------+-------------+---------------------------------------------------------------------------------|
+| Column            | Type    | Constraints | Description                                 
+|-------------------+---------+-------------+---------------------------------------------|
+| ORIGIN_IP         | TEXT    | NOT NULL    | The IP of the requester                     |
+| USER_CLIENT       | TEXT    |             | The user identifier                         |
+| USER              | TEXT    |             | The user id                                 |
+| TIMESTAMP         | INTEGER | NOT NULL    | The timestamp in unix epoch                 |
+| REQUEST_METHOD    | TEXT    | NOT NULL    | The request method (GET,                    |
+|                   |         |             | POST,PUT...)                                |
+| RESOURCE          | TEXT    | NOT NULL    | The resource of the request                 |
+| PROTOCOL          | TEXT    |             | The protocol (basically it's always HTTP)   |
+| PROTOCOL_VERSION  | REAL    |             | The version of the protocol (for HTTP       |
+|                   |         |             | protocol, it should be 1.0 or 1.1)          |
+| STATUS            | INTEGER | NOT NULL    | The status code of the response (for HTTP   |
+|                   |         |             | protocol it should be 200,404,401...)       |
+| BYTES_TRANSFERRED | INTEGER |             | The size (in bytes) of the response         |
+|-------------------+---------+-------------+---------------------------------------------|
 
 
 Bugs && questions
